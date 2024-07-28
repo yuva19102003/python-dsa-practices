@@ -10,6 +10,9 @@ class Dsec:
     def __init__ (self, name):
         self.name = name
 
+    def speak(self):
+        print("this is a {} from department of {}".format(self.name, self.dept))
+
 
 # object
 
@@ -20,3 +23,7 @@ staff = Dsec("staff")
 print(student.dept)
 print(student.name)
 print(staff.name)
+
+# calling the class method in object
+student.speak()
+staff.speak()
